@@ -8,6 +8,7 @@ The bar chart below visualizes the number of wallets falling within each 100-poi
 
 ### Score Range Table
 <img width="924" height="565" alt="image" src="https://github.com/user-attachments/assets/e6e8003e-9c82-473f-847e-44cca8046597" />
+
 Behavioral Insights
 Wallets in the Lower Score Ranges (0–299)
 Traits Observed:
