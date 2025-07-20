@@ -5,8 +5,10 @@ This document analyzes the results of credit scoring for all wallets using a dee
 1. Introduction
 This project implements a credit scoring system for DeFi wallets using transaction-level data from the Aave V2 protocol. Each wallet is assigned a credit score (0–1000), with higher scores indicating more trustworthy and stable behavior. The method leverages an unsupervised deep autoencoder neural network to assess behavioral normality and risk, without requiring any pre-labeled data.
 
+
 2. Methodology: Why Deep Autoencoder?
 Autoencoders are neural networks trained to reconstruct their input. When trained on unlabeled data, they learn the structure of typical wallet behavior.
+
 
 Key idea: Most “normal” wallets are reconstructed well (low error), while risky or unusual wallets aren’t (high error). The reconstruction error is used as a proxy for credit risk.
 
@@ -21,6 +23,7 @@ Requires no prior risk labels (fully unsupervised).
 Robust to variations in user behavior.
 
 3. Data Processing Flow
+ 
 Step 1: Data Ingestion
 The input is a JSON file where each row is a wallet transaction (fields: action, amount, assetSymbol, timestamp, etc.).
 
